@@ -1,0 +1,7 @@
+replicaCount: 2
+image: ganjababa/real-node-app
+tag: "v1"
+envName: "PRODUCTION MAIN SERVICE"
+dbHost: "my-external-database"
+dbPassword: "super-secret-password-123"
+hostname: "prod-main.local"
