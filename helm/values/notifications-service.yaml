@@ -1,0 +1,6 @@
+replicaCount: 1
+image: ganjababa/real-node-app
+tag: "v1"
+envName: "NOTIFICATIONS SERVICE"
+dbHost: "none"
+dbPassword: "none"

@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: notifications-service
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/baba-faisal/gitops.git
+    targetRevision: main
+    path: helm/microservice
+    helm:
+      valueFiles:
+        - ../values/notifications-service.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
