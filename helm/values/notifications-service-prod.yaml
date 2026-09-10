@@ -1,0 +1,7 @@
+replicaCount: 3
+image: ganjababa/real-node-app
+tag: "v1"
+envName: "PRODUCTION NOTIFICATIONS SERVICE"
+dbHost: "none"
+dbPassword: "none"
+hostname: "prod-notifications.local"
