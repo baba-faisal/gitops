@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: https://github.com/baba-faisal/gitops.git
     targetRevision: main
-    path: argocd              # <-- watches this folder
+    path: argocd/apps              # <-- watches this folder
     directory:
       recurse: true
-      exclude: 'root.yaml'    # don't include itself
+      #exclude: 'root.yaml'    # don't include itself
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
